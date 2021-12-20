@@ -16,5 +16,5 @@ else:
 def home():
     return render_template('home.html')
 
-if __name__ == "main":
+if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=True)
