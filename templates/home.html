@@ -9,6 +9,11 @@
 <meta property="og:type" content="website"/>        
 {% endblock %}
 
+{% block scripts %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="{{url_for('static', filename='scripts/home.js')}}"></script>
+{% endblock %}
+
 {% block head %} 
 {{ super() }}
 {% endblock %}
@@ -18,40 +23,48 @@
 {% endblock %}
 
 {% block content %}
-<div class="profile-picture">
-<img src="{{url_for('static', filename='images/profile.png')}}" alt="a picture of Johnny Rubix">
+<div class="profile-picture-container">
+    <img src="{{url_for('static', filename='images/profile.png')}}" alt="a picture of Johnny Rubix" id="profile-picture">
+</div>
+<br>
+
+<div class="caption-text" id="johnny-rubix-caption-container">
+    <h4 id="johnny-rubix-caption">Multimedia Artist. Technology Enthusiast. Professional Dumbass</h4>
 </div>
 
-<div class="caption-text">
-<h5>Multimedia Artist. Technology Enthusiast. Professional Dumbass</h5>
-</div>
-
+<div class="body-container">
 <div class="content-container" id="my-story-container">
-    <div class="button" id="new-song">
+    <div class="button" id="my-story-button">
         <h3>my story</h3>
     </div>
 
     <div class="drop-down-menu-container" id="my-story-drop-down">
         
         <div class="text-container" id="my-story">
-            <h3>Hi, my name is Johnny Rubix. Ever since I was young, I've been interested in stuff. I started with music as a kid, and over the years I've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. I even designed the website you're looking at right now. I think it's so cool that all of these things I've learned over the years allow me to take an idea that only exists in my head and turn it into something real that I can share with you. This site serves as a neat little hub where you can check out my various projects. I hope you enjoy them, and check back in from time to time. I'm always working on something!</h3>
+            <h3>Hi, my name is Johnny Rubix. Ever since I was young, I've been interested in stuff. I started with music as a kid, and over the years I've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. I even designed the website you're looking at right now.   </h3>
+            <br>
+            <h3>I think it's so cool that all of these things I've learned over the years allow me to take an idea that only exists in my head and turn it into something real that I can share with you.</h3>
+            <br>
+            <h3>This site serves as a neat little hub where you can check out my various projects. I hope you enjoy them, and check back in from time to time. I'm always working on something!</h3>
         </div>
     </div>
 </div>
 
-<div class="content-containter" id="new-music-container">
-    <div class="button" id="new-song">
+<div class="content-container" id="new-music-container">
+    <div class="button" id="streaming-button">
         <h3>stream my new song The Great Simulation</h3>
     </div>
 
     <div class="drop-down-menu-container" id="streaming-drop-down">
         <div class="drop-down-heading">
-            <h2>stream on your favorite platform</h2>
+            <h3>stream on your favorite platform</h3>
         </div>
 
-        <div class="streaming-links-container" id="streaming-links">
+        <br>
+
+        <div class="streaming-links-container" id="streaming-links-container">
             <div style="max-width:90%;">
-                <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;">
+                <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;" id="streaming-link">
                     <iframe style="position:absolute;top:0;left:0;" width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F34uKr7lCFPN4GjWk3LHQ36&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
                 </div>
             </div>
@@ -59,8 +72,8 @@
     </div>
 </div>
 
-<div class="content-containter" id="music-container">
-    <div class="button" id="music">
+<div class="content-container" id="music-container">
+    <div class="button" id="music-button">
         <h3>check out my music</h3>
     </div>
 
@@ -71,20 +84,20 @@
     </div>
 </div>
 
-<div class="content-containter" id="videos-container">
-    <div class="button" id="videos">
+<div class="content-container" id="videos-container">
+    <div class="button" id="videos-button">
         <h3>check out some videos I've made</h3>
     </div>
 
-    <div class="drop-down-menu-container" id="music-drop-down">  
-        <div class="music-container" id="music-player">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLU1XghtFBVq9k86wDDZWlsrClMvo_9sMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <div class="drop-down-menu-container" id="videos-drop-down">  
+        <div class="videos-container" id="videos-container">
+            <iframe width="95%" height="300" src="https://www.youtube.com/embed/videoseries?list=PLU1XghtFBVq9k86wDDZWlsrClMvo_9sMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player"></iframe>
         </div>
     </div>
 </div>
 
-<div class="content-containter" id="photography-container">
-    <div class="button" id="photography">
+<div class="content-container" id="photography-container">
+    <div class="button" id="photography-button">
         <h3>some of my photography</h3>
     </div>
 
@@ -95,7 +108,7 @@
     </div>
 </div>
 
-<div class="content-containter" id="merch-store-container">
+<div class="content-container" id="merch-store-container">
     <a href="http://johnnyrubix.bandcamp.com/merch">
         <div class="button" id="merch-store">
             <h3>I have a merch store!</h3>
@@ -103,31 +116,40 @@
     </a>
 </div>
 
-<div class="content-containter" id="social-media-container">
+<br>
+<br>
+<br>
+<br>
+
+
+<div class="content-container" id="social-media-container">
         <h3>I'm on social media!</h3>
 
+        <br>
+
     <div class="social-media-container" id="social-media-container">
-        <span class="social-media-icon">
+        <span>
             <a href="http://facebook.com/rubixqmusic">
-                <img src="{{url_for('static', filename='images/facebook.png')}}" alt="">
+                <img src="{{url_for('static', filename='images/facebook.png')}}" alt="" class="social-media-icon">
             </a>
         </span>
         
-        <span class="social-media-icon">
+        <span>
             <a href="http://twitter.com/rubixqmusic">
-                <img src="{{url_for('static', filename='images/twitter.png')}}" alt="">
+                <img src="{{url_for('static', filename='images/twitter.png')}}" alt="" class="social-media-icon">
             </a>
         </span>
 
-        <span class="social-media-icon">
+        <span>
             <a href="http://instagram.com/rubixqmusic">
-                <img src="{{url_for('static', filename='images/instagram.png')}}" alt="">
+                <img src="{{url_for('static', filename='images/instagram.png')}}" alt="" class="social-media-icon">
             </a>
         </span> 
         
     </div>
 </div>
 
+</div>
 
 {% endblock %}
 
