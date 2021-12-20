@@ -35,7 +35,7 @@
     --button-text-color: rgb(185, 253, 235);
     --button-border-color: rgb(185, 253, 235);
     --button-hover-color: rgba(156, 28, 139, 0.521);
-    --button-active-color: rgb(255, 130, 238);
+    --button-active-color: rgba(156, 28, 139, 0.521);
     --menu-border-color: rgb(185, 253, 235);
 
     --main-heading-font: IntrepidExtraBold;
@@ -81,6 +81,7 @@
 
 a {
     text-decoration: none;
+
 }
 
 
