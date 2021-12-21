@@ -38,6 +38,8 @@
     --button-active-color: rgba(156, 28, 139, 0.521);
     --menu-border-color: rgb(185, 253, 235);
 
+    --default-word-spacing: 5px !important;
+
     --main-heading-font: IntrepidExtraBold;
     --main-heading-font-size: 90px;
 
@@ -84,8 +86,6 @@
 
 a {
     text-decoration: none !important; 
-    display: inline-block;
-
 }
 
 
@@ -95,7 +95,8 @@ h1 {
     background: transparent;
     color: var(--main-heading-color);
     font-weight: normal;
-    margin: 0;    
+    margin: 0;
+    word-spacing: var(--default-letter-spacing);    
 }
 
 h2 {
@@ -105,6 +106,7 @@ h2 {
     color: var(--subheading-color);
     font-weight: normal;   
     margin: 0; 
+    word-spacing: var(--default-letter-spacing); 
 }
 
 h3 {
@@ -114,6 +116,7 @@ h3 {
     color: var(--normal-text-color);
     font-weight: normal;    
     margin: 0;
+    word-spacing: var(--default-letter-spacing); 
 }
 
 h4 {
@@ -122,7 +125,8 @@ h4 {
     background: transparent;
     color: var(--caption-color);
     font-weight: normal;  
-    margin: 0;  
+    margin: 0;
+    word-spacing: var(--default-letter-spacing);   
 }
 
 .header {
@@ -251,7 +255,7 @@ body {
     border: var(--border-size) solid var(--button-border-color);
     width: var(--close-menu-button-width);
     height: var(--close-menu-button-height);
-    padding: 0% 1% 1% 1%;
+    padding: 1% 1% 1% 1%;
     text-align: center;
     text-justify: center;
     margin-left: auto;

@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+    var streamingButtonText = $('#streaming-button h3').text()
+
     //my story section
 
     $("#my-story-button").click(function() {
@@ -22,8 +24,10 @@ $(document).ready(function() {
         var isHidden = $("#streaming-drop-down").is(":hidden");
         if (isHidden) {
           $('#streaming-drop-down').slideDown();
+          $('#streaming-button h3').text("Stream On Your Favorite Platform");
         } else {
           $('#streaming-drop-down').slideUp();
+          $('#streaming-button h3').text(streamingButtonText);
           }
     });
 
@@ -61,6 +65,12 @@ $(document).ready(function() {
             $('#photography-drop-down').slideUp();
           }
     });
+
+    $("#merch-store-button").click(function() {
+        var url = "http://johnnyrubix.bandcamp.com/merch";
+        window.open(url, '_blank');
+      
+  });
   
   
   });
