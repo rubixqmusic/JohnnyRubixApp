@@ -140,6 +140,8 @@ h4 {
 
 body {
     background-image: var(--background-image);
+    background-color: rgba(0, 0, 0, 0.486);
+    background-blend-mode: darken;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
