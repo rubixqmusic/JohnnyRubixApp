@@ -4,7 +4,7 @@
 {% block opengraph %}
 <meta property="og:url" content="http://www.johnnyrubix.com"/>
 <meta property="og:title" content="Johnny Rubix"/>
-<meta property="og:description" content="Multimedia Artist. Technology Enthusiast. Professional Dumbass"/>
+<meta property="og:description" content="multimedia artist. technology enthusiast. professional dumbass"/>
 <meta property="og:image" content="{{url_for('static', filename='images/johnnyrubix-og.png')}}">
 <meta property="og:type" content="website"/>        
 {% endblock %}
@@ -30,7 +30,7 @@
 <br>
 
 <div class="caption-text" id="johnny-rubix-caption-container">
-    <h4 id="johnny-rubix-caption">Multimedia Artist. Technology Enthusiast. Professional Dumbass</h4>
+    <h4 id="johnny-rubix-caption">multimedia artist. technology enthusiast. professional dumbass</h4>
 </div>
 
 <br>
@@ -46,11 +46,11 @@
     <div class="drop-down-menu-container" id="my-story-drop-down">
         
         <div class="text-container" id="my-story">
-            <h3>Hi, my name is Johnny Rubix. Ever since I was young, I've been interested in stuff. I started with music as a kid, and over the years I've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. I even designed the website you're looking at right now.   </h3>
+            <h3>hi, my name is Johnny Rubix. ever since i was young, i've been interested in stuff. i started with music as a kid, and over the years i've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. i even designed the website you're looking at right now.   </h3>
             <br>
-            <h3>I think it's so cool that all of these things I've learned over the years allow me to take an idea that only exists in my head and turn it into something real that I can share with you.</h3>
+            <h3>i think it's so cool that all of these things i've learned over the years allow me to take an idea that only exists in my head and turn it into something real that i can share with you.</h3>
             <br>
-            <h3>This site serves as a neat little hub where you can check out my various projects. I hope you enjoy them, and check back in from time to time. I'm always working on something!</h3>
+            <h3>this site serves as a neat little hub where you can check out my various projects. i hope you enjoy them, and check back in from time to time. i'm always working on something!</h3>
         </div>
         <br>
         <div class="close-menu-button" id="close-my-story-button">
@@ -65,19 +65,24 @@
     </div>
 
     <div class="drop-down-menu-container" id="streaming-drop-down">
-       <!-- <div class="drop-down-heading">
-            <h3>stream on your favorite platform</h3>
-        </div> -->
+        
 
         <br>
 
         <div class="streaming-links-container" id="streaming-links-container">
             <div style="max-width:90%;">
                 <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;" id="streaming-link">
-                    <iframe style="position:absolute;top:0;left:0;" width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F34uKr7lCFPN4GjWk3LHQ36&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write"></iframe>
+                    <iframe style="position:absolute;top:0;left:0;" width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F34uKr7lCFPN4GjWk3LHQ36&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write" class="iframe-box"></iframe>
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+
+        <div class="close-menu-button" id="close-streaming-button">
+            <h3>X</h3>
+        </div>
+        
     </div>
 </div>
 
@@ -88,7 +93,14 @@
 
     <div class="drop-down-menu-container" id="music-drop-down">  
         <div class="music-container" id="music-player">
-            <iframe src="https://open.spotify.com/embed/artist/7lFjSAJ24FU5Yvi2CUtsDf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            <iframe src="https://open.spotify.com/embed/artist/7lFjSAJ24FU5Yvi2CUtsDf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="iframe-box"></iframe>
+        </div>
+        
+        <br>
+        <h3>you can also check out my complete discography on bandcamp</h3>
+        <br>
+        <div class="close-menu-button" id="close-music-button">
+            <h3>X</h3>
         </div>
     </div>
 </div>
@@ -100,7 +112,12 @@
 
     <div class="drop-down-menu-container" id="videos-drop-down">  
         <div class="videos-container" id="videos-container">
-            <iframe width="95%" height="300" src="https://www.youtube.com/embed/videoseries?list=PLU1XghtFBVq9k86wDDZWlsrClMvo_9sMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player"></iframe>
+            <iframe width="95%" height="300" src="https://www.youtube.com/embed/videoseries?list=PLU1XghtFBVq9k86wDDZWlsrClMvo_9sMN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
+        </div>
+
+        <br>
+        <div class="close-menu-button" id="close-videos-button">
+            <h3>X</h3>
         </div>
     </div>
 </div>
@@ -111,7 +128,7 @@
     </div>
 
     <div class="drop-down-menu-container" id="photography-drop-down">  
-        <div class="photography-container" id="photography-slideshow">
+        <div class="photography-container iframe-box" id="photography-slideshow">
             <div id="photographyCarousel" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -164,15 +181,17 @@
                 </a>
               </div>
         </div>
+        <br>
+        <div class="close-menu-button" id="close-photography-button">
+            <h3>X</h3>
+        </div>
     </div>
 </div>
 
 <div class="content-container" id="merch-store-container">
-  <!--  <a href="http://johnnyrubix.bandcamp.com/merch" target="_blank"> -->
         <div class="button" id="merch-store-button">
             <h3>I have a merch store!</h3>
         </div>
-   <!-- </a> -->
 </div>
 
 <br>
@@ -185,6 +204,7 @@
         <h3>I'm on social media!</h3>
 
         <br>
+</div>
 
     <div class="social-media-container" id="social-media-container">
         <span>
@@ -206,7 +226,13 @@
         </span> 
         
     </div>
-</div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
 
 </div>
 

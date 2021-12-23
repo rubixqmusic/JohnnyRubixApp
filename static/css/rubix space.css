@@ -61,6 +61,8 @@
     --button-width: 80vw;
     --max-button-width: 350px;
 
+    --close-button-color: rgba(146, 5, 64, 0.521);
+    --close-button-hover-color: rgba(230, 38, 143, 0.521);
     --close-menu-button-width: 30px;
     --close-menu-button-height: 30px;
 
@@ -71,6 +73,7 @@
     --max-content-container-width: 400px;
 
     --border-size: 5px;
+    --iframe-border-size: 1px;
 
     --menu-padding: 1%;
 
@@ -140,7 +143,7 @@ h4 {
 
 body {
     background-image: var(--background-image);
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.575);
     background-blend-mode: darken;
     background-attachment: fixed;
     background-position: center;
@@ -231,6 +234,11 @@ body {
     margin-left: 10%;
 }
 
+.iframe-box {
+    border: var(--iframe-border-size) solid var(--button-border-color);
+
+}
+
 .button {
     margin-bottom: var(--button-bottom-margin);
     border: var(--border-size) solid var(--button-border-color);
@@ -254,6 +262,7 @@ body {
 
 .close-menu-button {
     margin-bottom: var(--button-bottom-margin);
+    background-color: var(--close-button-color);
     border: var(--border-size) solid var(--button-border-color);
     width: var(--close-menu-button-width);
     height: var(--close-menu-button-height);
@@ -270,7 +279,7 @@ body {
 }
 
 .close-menu-button:hover {
-    background-color: var(--button-hover-color);
+    background-color: var(--close-button-hover-color);
     cursor: pointer;
 }
 

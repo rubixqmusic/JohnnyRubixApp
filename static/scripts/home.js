@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
-    var streamingButtonText = $('#streaming-button h3').text()
+    var streamingButtonText = $('#streaming-button h3').text();
+    var musicButtonText = $('#music-button h3').text();
 
     //my story section
 
@@ -31,6 +32,12 @@ $(document).ready(function() {
           }
     });
 
+    $("#close-streaming-button").click(function() {
+      $('#streaming-drop-down').slideUp();
+      $('#streaming-button h3').text(streamingButtonText);
+  });
+
+
 
     //music section
 
@@ -38,10 +45,17 @@ $(document).ready(function() {
     var isHidden = $("#music-drop-down").is(":hidden");
     if (isHidden) {
         $('#music-drop-down').slideDown();
+        $('#music-button h3').text("i'm on spotify and all major streaming platforms");
     } else {
         $('#music-drop-down').slideUp();
+        $('#music-button h3').text(musicButtonText);
       }
     });
+
+    $("#close-music-button").click(function() {
+      $('#music-drop-down').slideUp();
+      $('#music-button h3').text(musicButtonText);
+  });
 
 
     //videos section
@@ -55,6 +69,10 @@ $(document).ready(function() {
           }
     });
 
+    $("#close-videos-button").click(function() {
+      $('#videos-drop-down').slideUp();
+  });
+
     //photography section
 
     $("#photography-button").click(function() {
@@ -65,6 +83,10 @@ $(document).ready(function() {
             $('#photography-drop-down').slideUp();
           }
     });
+
+    $("#close-photography-button").click(function() {
+      $('#photography-drop-down').slideUp();
+  });
 
     $("#merch-store-button").click(function() {
         var url = "http://johnnyrubix.bandcamp.com/merch";
