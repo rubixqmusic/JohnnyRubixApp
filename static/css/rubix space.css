@@ -61,10 +61,14 @@
     --button-width: 80vw;
     --max-button-width: 350px;
 
+    --menu-button-width: 80%;
+    --max-menu-button-width: 200px;
+
     --close-button-color: rgba(146, 5, 64, 0.521);
     --close-button-hover-color: rgba(230, 38, 143, 0.521);
     --close-menu-button-width: 30px;
     --close-menu-button-height: 30px;
+    --close-menu-button-bottom-margin: 5px;
 
     --menu-width: 95vw;
     --max-menu-width: 400px;
@@ -73,6 +77,8 @@
     --max-content-container-width: 400px;
 
     --border-size: 5px;
+    --menu-button-border-size: 3px;
+    --menu-line-border-size: 2px;
     --iframe-border-size: 1px;
 
     --menu-padding: 1%;
@@ -80,9 +86,6 @@
     --social-media-icon-size: 60px;
     --social-media-icon-hover-size: 70px;
     --hover-transition-time: 0.5s;
-
-
-
 }
 
 
@@ -255,15 +258,36 @@ body {
     background-color: var(--button-hover-color);
 }
 
-.button:hover {
+.button:hover, .menu-button:hover {
     background-color: var(--button-hover-color);
     cursor: pointer;
 }
 
-.close-menu-button {
+.menu-button {
     margin-bottom: var(--button-bottom-margin);
+    border: var(--menu-button-border-size) solid var(--button-border-color);
+    min-height: var(--button-height);
+    width: var(--menu-button-width);
+    max-width: var(--max-menu-button-width);
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    text-justify: center;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.menu-line {
+    border-bottom: var(--menu-line-border-size) solid var(--button-border-color);
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+.close-menu-button {
+    margin-bottom: var(--close-menu-button-bottom-margin);
     background-color: var(--close-button-color);
-    border: var(--border-size) solid var(--button-border-color);
+    border: var(--menu-button-border-size) solid var(--button-border-color);
     width: var(--close-menu-button-width);
     height: var(--close-menu-button-height);
     padding: 1% 1% 1% 1%;
@@ -281,6 +305,11 @@ body {
 .close-menu-button:hover {
     background-color: var(--close-button-hover-color);
     cursor: pointer;
+}
+
+.video-caption {
+    text-align: center;
+    text-justify: center;
 }
 
 #videos-player {
@@ -304,10 +333,10 @@ body {
     height: var(--social-media-icon-size);
     margin-left: 3%;
     margin-right: 3%;
-    transition: width var(--hover-transition-time), height var(--hover-transition-time);
+    transition: opacity var(--hover-transition-time);
+    opacity: 0.75;
 }
 
 .social-media-icon:hover {
-    width: var(--social-media-icon-hover-size);
-    height: var(--social-media-icon-hover-size);
+    opacity: 1;
 }
