@@ -3,6 +3,14 @@ $(document).ready(function() {
     var streamingButtonText = $('#streaming-button h3').text();
     var musicButtonText = $('#music-button h3').text();
 
+    //header button home link
+
+    $("#main-header").click(function() {
+      var url = "/";
+      window.open(url, "_self");
+    
+    });
+
     //my story section
 
     $("#my-story-button").click(function() {
@@ -35,7 +43,7 @@ $(document).ready(function() {
     $("#close-streaming-button").click(function() {
       $('#streaming-drop-down').slideUp();
       $('#streaming-button h3').text(streamingButtonText);
-  });
+    });
 
 
 
@@ -61,7 +69,7 @@ $(document).ready(function() {
     $("#close-music-button").click(function() {
       $('#music-drop-down').slideUp();
       $('#music-button h3').text(musicButtonText);
-  });
+    });
 
 
     //videos section
@@ -79,7 +87,7 @@ $(document).ready(function() {
       $('#videos-drop-down').slideUp();
     });
 
-  $("#youtube-button").click(function() {
+    $("#youtube-button").click(function() {
     var url = "http://youtube.com/c/johnnyrubix";
     window.open(url, '_blank');
   
@@ -99,6 +107,23 @@ $(document).ready(function() {
     $("#close-photography-button").click(function() {
       $('#photography-drop-down').slideUp();
     });
+
+    //random stuff section
+
+    $("#random-stuff-button").click(function() {
+      var isHidden = $("#random-stuff-drop-down").is(":hidden");
+      if (isHidden) {
+          $('#random-stuff-drop-down').slideDown();
+      } else {
+          $('#random-stuff-drop-down').slideUp();
+        }
+    });
+
+    $("#close-random-stuff-button").click(function() {
+    $('#random-stuff-drop-down').slideUp();
+    });
+
+  //merch store section
 
     $("#merch-store-button").click(function() {
         var url = "http://johnnyrubix.bandcamp.com/merch";

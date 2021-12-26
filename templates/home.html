@@ -9,6 +9,7 @@
 <meta property="og:type" content="website"/>        
 {% endblock %}
 
+
 {% block scripts %}
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -27,6 +28,7 @@
 <div class="profile-picture-container">
     <img src="{{url_for('static', filename='images/profile.png')}}" alt="a picture of Johnny Rubix" id="profile-picture">
 </div>
+
 <br>
 
 <div class="caption-text" id="johnny-rubix-caption-container">
@@ -38,209 +40,277 @@
 <br>
 
 <div class="body-container">
-<div class="content-container" id="my-story-container">
-    <div class="button" id="my-story-button">
-        <h3>my story</h3>
-    </div>
 
-    <div class="drop-down-menu-container" id="my-story-drop-down">
-        
-        <div class="text-container" id="my-story">
-            <h3>hi, my name is johnny rubix. ever since i was young, i've been interested in stuff. i started with music as a kid, and over the years i've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. i even designed the website you're looking at right now.   </h3>
-            <br>
-            <h3>i think it's so cool that all of these things i've learned over the years allow me to take an idea that only exists in my head and turn it into something real that i can share with you.</h3>
-            <br>
-            <h3>this site serves as a neat little hub where you can check out my various projects. i hope you enjoy them, and check back in from time to time. i'm always working on something!</h3>
+
+    <div class="content-container" id="my-story-container">
+        <div class="button" id="my-story-button">
+            <h3>my story</h3>
         </div>
-        <br>
-        <div class="close-menu-button" id="close-my-story-button">
-            <h3>X</h3>
-        </div>
-    </div>
-</div>
 
-<div class="content-container" id="new-music-container">
-    <div class="button" id="streaming-button">
-        <h3>stream my new song Lonely Christmas</h3>
-    </div>
-
-    <div class="drop-down-menu-container" id="streaming-drop-down">
-        
-
-        <br>
-
-        <div class="streaming-links-container" id="streaming-links-container">
-            <div style="max-width:90%;">
-                <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;" id="streaming-link">
-                    <iframe style="position:absolute;top:0;left:0;" width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F34uKr7lCFPN4GjWk3LHQ36&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write" class="iframe-box"></iframe>
-                </div>
+        <div class="drop-down-menu-container" id="my-story-drop-down">
+            
+            <div class="text-container" id="my-story">
+                <h3>hi, my name is johnny rubix. ever since i was young, i've been interested in stuff. i started with music as a kid, and over the years i've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. i even designed the website you're looking at right now.   </h3>
+                <br>
+                <h3>i think it's so cool that all of these things i've learned over the years allow me to take an idea that only exists in my head and turn it into something real that i can share with you.</h3>
+                <br>
+                <h3>this site serves as a neat little hub where you can check out my various projects. i hope you enjoy them, and check back in from time to time. i'm always working on something!</h3>
+            </div>
+            <br>
+            <div class="close-menu-button" id="close-my-story-button">
+                <h3>X</h3>
             </div>
         </div>
-        <br>
-        <br>
-        <div class="close-menu-button" id="close-streaming-button">
-            <h3>X</h3>
-        </div>
-        
-    </div>
-</div>
-
-<div class="content-container" id="music-container">
-    <div class="button" id="music-button">
-        <h3>check out my music</h3>
     </div>
 
-    <div class="drop-down-menu-container" id="music-drop-down">  
-        <div class="music-container" id="music-player">
-            <iframe src="https://open.spotify.com/embed/artist/7lFjSAJ24FU5Yvi2CUtsDf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="iframe-box"></iframe>
-        </div>
-        
-        <br>
-        <h3 style="text-align: center;">you can also check out my complete discography on bandcamp</h3>
-        <br>
-        <br>
-        <div class="menu-button" id="bandcamp-button">
-            <h3>visit my bandcamp</h3>
-        </div>
-        <br>
-        <br>     
-        <div class="close-menu-button" id="close-music-button">
-            <h3>X</h3>
-        </div>  
-    </div>
-</div>
 
-<div class="content-container" id="videos-container">
-    <div class="button" id="videos-button">
-        <h3>check out some videos i've made</h3>
-    </div>
+    <div class="content-container" id="new-music-container">
+        <div class="button" id="streaming-button">
+            <h3>stream my new song Lonely Christmas</h3>
+        </div>
 
-    <div class="drop-down-menu-container" id="videos-drop-down">  
-
-        <div class="videos-container" id="videos-container">
-            <iframe width="95%" height="300" src="https://www.youtube.com/embed/H6u2R5r-N7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
-        </div>
-        <br>
-        <div class="video-caption">
-            <h4>the quintessential johnny rubix video</h4>
-        </div>
-        <br>
-
-        <div class="menu-line"></div>
-        <br>
-        <br>
-
-        <div class="videos-container" id="videos-container">
-            <iframe width="95%" height="300" src="https://www.youtube.com/embed/2q08xPmXyZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
-        </div>
-        <br>
-        <div class="video-caption">
-            <h4>you can try but you can't escape it</h4>
-        </div>
-        <br>
-        <div class="menu-line"></div>
-        <br>
-        <br>
-
-        <div class="videos-container" id="videos-container">
-            <iframe width="95%" height="300" src="https://www.youtube.com/embed/Pmy4FE3hmkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
-        </div>
-        <br>
-        <div class="video-caption">
-            <h4>the simulation is restarting</h4>
-        </div>
-        <br>
-        <div class="menu-line"></div>
-        <br>
-        <br>
-        <div class="menu-button" id="youtube-button">
-            <h3>visit my youtube channel</h3>
-        </div>
-        <br>
-        <br>
-        <div class="close-menu-button" id="close-videos-button">
-            <h3>X</h3>
-        </div>
-    </div>
-</div>
-
-<div class="content-container" id="photography-container">
-    <div class="button" id="photography-button">
-        <h3>some of my photography</h3>
-    </div>
-
-    <div class="drop-down-menu-container" id="photography-drop-down">  
-        <div class="photography-container iframe-box" id="photography-slideshow">
-            <div id="photographyCarousel" class="carousel slide" data-ride="carousel">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                  <li data-target="#photographyCarousel" data-slide-to="0" class="active"></li>
-                  <li data-target="#photographyCarousel" data-slide-to="1"></li>
-                  <li data-target="#photographyCarousel" data-slide-to="2"></li>
-                </ol>
-              
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                  <div class="item active">
-                    <img src="{{url_for('static', filename='images/rio.jpg')}}" alt="Rio">
-                    
-                    <div class="carousel-caption">
-                        <h4>meow</h4>
-                    </div>
-                  </div>
-              
-                  <div class="item">
-                    <img src="{{url_for('static', filename='images/building.jpg')}}" alt="Building">
-                   
-                    <div class="carousel-caption">
-                        <h4></h4>
-                    </div>
-                  </div>
-              
-                  <div class="item">
-                    <img src="{{url_for('static', filename='images/flowers.jpg')}}" alt="flowers">
+        <div class="drop-down-menu-container" id="streaming-drop-down">
             
-                    <div class="carousel-caption">
-                        <h4></h4>
+
+            <br>
+
+            <div class="streaming-links-container" id="streaming-links-container">
+                <div style="max-width:90%;">
+                    <div style="position:relative;padding-bottom:calc(56.25% + 52px);height: 0;" id="streaming-link">
+                        <iframe style="position:absolute;top:0;left:0;" width="100%" height="100%" src="https://odesli.co/embed/?url=https%3A%2F%2Fsong.link%2Fs%2F34uKr7lCFPN4GjWk3LHQ36&theme=dark" frameborder="0" allowfullscreen sandbox="allow-same-origin allow-scripts allow-presentation allow-popups allow-popups-to-escape-sandbox" allow="clipboard-read; clipboard-write" class="iframe-box"></iframe>
                     </div>
-                  </div>
                 </div>
-              
-                <!-- Left and right controls -->
-                <a class="left carousel-control" href="#photographyCarousel" data-slide="prev">
-                  <span class="glyphicon glyphicon-chevron-left"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#photographyCarousel" data-slide="next">
-                  <span class="glyphicon glyphicon-chevron-right"></span>
-                  <span class="sr-only">Next</span>
-                </a>
-              </div>
-        </div>
-        <br>
-        <div class="close-menu-button" id="close-photography-button">
-            <h3>X</h3>
+            </div>
+            <br>
+            <br>
+            <div class="close-menu-button" id="close-streaming-button">
+                <h3>X</h3>
+            </div>
+            
         </div>
     </div>
-</div>
 
-<div class="content-container" id="merch-store-container">
-        <div class="button" id="merch-store-button">
-            <h3>i have a merch store!</h3>
+
+    <div class="content-container" id="music-container">
+        <div class="button" id="music-button">
+            <h3>check out my music</h3>
         </div>
-</div>
 
-<br>
-<br>
-<br>
-<br>
+        <div class="drop-down-menu-container" id="music-drop-down">  
+            <div class="music-container" id="music-player">
+                <iframe src="https://open.spotify.com/embed/artist/7lFjSAJ24FU5Yvi2CUtsDf?utm_source=generator&theme=0" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" class="iframe-box"></iframe>
+            </div>
+            
+            <br>
+            <h3 style="text-align: center;">you can also check out my complete discography on bandcamp</h3>
+            <br>
+            <br>
+            <div class="menu-button" id="bandcamp-button">
+                <h3>visit my bandcamp</h3>
+            </div>
+            <br>
+            <br>     
+            <div class="close-menu-button" id="close-music-button">
+                <h3>X</h3>
+            </div>  
+        </div>
+    </div>
 
 
-<div class="content-container" id="social-media-container">
-        <h3>I'm on social media!</h3>
+    <div class="content-container" id="videos-container">
+        <div class="button" id="videos-button">
+            <h3>check out some videos i've made</h3>
+        </div>
 
-        <br>
-</div>
+        <div class="drop-down-menu-container" id="videos-drop-down">  
+
+            <div class="videos-container" id="videos-container">
+                <iframe width="95%" height="300" src="https://www.youtube.com/embed/H6u2R5r-N7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
+            </div>
+            <br>
+            <div class="video-caption">
+                <h4>the quintessential johnny rubix video</h4>
+            </div>
+            <br>
+
+            <div class="menu-line"></div>
+            <br>
+            <br>
+
+            <div class="videos-container" id="videos-container">
+                <iframe width="95%" height="300" src="https://www.youtube.com/embed/2q08xPmXyZc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
+            </div>
+            <br>
+            <div class="video-caption">
+                <h4>you can try but you can't escape it</h4>
+            </div>
+            <br>
+            <div class="menu-line"></div>
+            <br>
+            <br>
+
+            <div class="videos-container" id="videos-container">
+                <iframe width="95%" height="300" src="https://www.youtube.com/embed/Pmy4FE3hmkk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen id="videos-player" class="iframe-box"></iframe>
+            </div>
+            <br>
+            <div class="video-caption">
+                <h4>the simulation is restarting</h4>
+            </div>
+            <br>
+            <div class="menu-line"></div>
+            <br>
+            <br>
+            <div class="menu-button" id="youtube-button">
+                <h3>visit my youtube channel</h3>
+            </div>
+            <br>
+            <br>
+            <div class="close-menu-button" id="close-videos-button">
+                <h3>X</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-container" id="photography-container">
+        <div class="button" id="photography-button">
+            <h3>some of my photography</h3>
+        </div>
+
+        <div class="drop-down-menu-container" id="photography-drop-down">  
+            <div class="photography-container iframe-box" id="photography-slideshow">
+                <div id="photographyCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#photographyCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#photographyCarousel" data-slide-to="1"></li>
+                    <li data-target="#photographyCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{{url_for('static', filename='images/rio.jpg')}}" alt="Rio">
+                        
+                        <div class="carousel-caption">
+                            <h4>meow</h4>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="{{url_for('static', filename='images/building.jpg')}}" alt="Building">
+                    
+                        <div class="carousel-caption">
+                            <h4></h4>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="{{url_for('static', filename='images/flowers.jpg')}}" alt="flowers">
+                
+                        <div class="carousel-caption">
+                            <h4></h4>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#photographyCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#photographyCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="close-menu-button" id="close-photography-button">
+                <h3>X</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-container" id="random-stuff-container">
+        <div class="button" id="random-stuff-button">
+            <h3>other random projects and stuff i'm into</h3>
+        </div>
+
+        <div class="drop-down-menu-container" id="random-stuff-drop-down">  
+            <div class="photography-container iframe-box" id="game-slideshow">
+                <div id="gameCarousel" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                    <li data-target="#gameCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#gameCarousel" data-slide-to="1"></li>
+                    <li data-target="#gameCarousel" data-slide-to="2"></li>
+                    </ol>
+                
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                    <div class="item active">
+                        <img src="{{url_for('static', filename='images/rio.jpg')}}" alt="Rio">
+                        
+                        <div class="carousel-caption">
+                            <h4>meow</h4>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="{{url_for('static', filename='images/building.jpg')}}" alt="Building">
+                    
+                        <div class="carousel-caption">
+                            <h4></h4>
+                        </div>
+                    </div>
+                
+                    <div class="item">
+                        <img src="{{url_for('static', filename='images/flowers.jpg')}}" alt="flowers">
+                
+                        <div class="carousel-caption">
+                            <h4></h4>
+                        </div>
+                    </div>
+                    </div>
+                
+                    <!-- Left and right controls -->
+                    <a class="left carousel-control" href="#gameCarousel" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                    <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="right carousel-control" href="#gameCarousel" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                    <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            <br>
+            <div class="close-menu-button" id="close-random-stuff-button">
+                <h3>X</h3>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="content-container" id="merch-store-container">
+            <div class="button" id="merch-store-button">
+                <h3>i have a merch store!</h3>
+            </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div class="content-container" id="social-media-container">
+            <h3>I'm on social media!</h3>
+
+            <br>
+    </div>
+    
 
     <div class="social-media-container" id="social-media-container">
         <span>
