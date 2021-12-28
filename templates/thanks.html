@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+
+{% block opengraph %}
+<meta property="og:url" content="http://www.johnnyrubix.com/hello-dreamer"/>
+<meta property="og:title" content="Hello, Dreamer"/>
+<meta property="og:description" content="don't wake up"/>
+<meta property="og:image" content="{{url_for('static', filename='images/johnnyrubix-og.png')}}">
+<meta property="og:type" content="website"/>        
+{% endblock %}
+
+
+{% block scripts %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="{{url_for('static', filename='scripts/hello-dreamer.js')}}"></script>
+{% endblock %}
+
+{% block head %} 
+{{ super() }}
+{% endblock %}
+
+{% block header %} 
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+
+<div class="body-container">
+
+    <div class="content-container">
+    
+        <br>
+        <h3>hey, thank you!</h3>
+        <br>
+                
+    </div>
+
+    <br>
+    <br>
+
+    <div class="content-container" id="back-to-main-container">
+        <div class="button" id="back-to-main-button">
+            <h3>back to main</h3>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+{% endblock %}
+
+{% block footer %} 
+{{ super() }}
+{% endblock %}

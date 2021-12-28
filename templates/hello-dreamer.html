@@ -1,0 +1,91 @@
+{% extends "layout.html" %}
+{% block title %}{% endblock %}
+
+{% block opengraph %}
+<meta property="og:url" content="http://www.johnnyrubix.com/hello-dreamer"/>
+<meta property="og:title" content="Hello, Dreamer"/>
+<meta property="og:description" content="don't wake up"/>
+<meta property="og:image" content="{{url_for('static', filename='images/johnnyrubix-og.png')}}">
+<meta property="og:type" content="website"/>        
+{% endblock %}
+
+
+{% block scripts %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="{{url_for('static', filename='scripts/hello-dreamer.js')}}"></script>
+{% endblock %}
+
+{% block head %} 
+{{ super() }}
+{% endblock %}
+
+{% block header %} 
+{{ super() }}
+{% endblock %}
+
+{% block content %}
+
+<br>
+<br>
+<br>
+
+<div class="body-container">
+
+    <div class="content-container">
+        <div class="drop-down-menu-container" id="game-story-menu">
+            <br>
+            <h3>you awaken one night in a <span style="color: red;">dream </span> in hallways that feel familiar. in the last room, you find ella. she tells you that unless you conquer your fears before you wake up, the <span style="color: red;">dream</span> world will collapse in on itself. now you must fight to stay lucid enough to navigate your subconscious and confront your nightmares and memories before it's too late.</h3>
+            <br>
+            <h3 style="text-align: center;">don't wake up</h3>
+            <br>
+            <h3>this game is still in development. if you are interested in play testing it, please contact me using the form below!</h3>
+            <br>
+        </div>
+    </div>
+
+    <div class="content-container">
+        <div class="drop-down-menu-container" id="game-form-menu">
+            <form action="https://formsubmit.co/admin@johnnyrubix.com" method="POST">
+                <br>
+                <h3>contact me if you want to play test this game!</h3>
+                <br>
+                <input type="hidden" name="_subject" value="new game inquiry!">
+                <input type="hidden" name="_next" value="https://www.johnnyrubix.com/thanks">
+                <input class="input-field" type="text" name="name" placeholder="name (required*)" required>
+                <br>
+                <input class="input-field" type="email" name="email" placeholder="email (required*)" required>
+                <br>
+                <textarea class="text-box" id="text-box" name="text-box" rows="4" cols="50" maxlength="500" placeholder="message (optional)"></textarea>
+                <br>
+                <button class="form-submit-button" type="submit">Send</button>
+           </form>
+           <br>
+           <br>
+        </div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="content-container" id="back-to-main-container">
+        <div class="button" id="back-to-main-button">
+            <h3>back to main</h3>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</div>
+
+
+{% endblock %}
+
+{% block footer %} 
+{{ super() }}
+{% endblock %}

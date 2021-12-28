@@ -119,21 +119,15 @@ $(document).ready(function() {
         }
     });
 
-    $("#hello-dreamer-button").click(function() {
-      var url = "/hello-dreamer";
-      window.open(url, '_self');
-    
-    });
-
     $("#close-random-stuff-button").click(function() {
     $('#random-stuff-drop-down').slideUp();
     });
 
-  //merch store section
+  //back to main section
 
-    $("#merch-store-button").click(function() {
-        var url = "http://johnnyrubix.bandcamp.com/merch";
-        window.open(url, '_blank');
+    $("#back-to-main-button").click(function() {
+        var url = "/";
+        window.open(url, '_self');
       
     });
   

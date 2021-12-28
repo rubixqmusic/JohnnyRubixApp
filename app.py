@@ -16,5 +16,13 @@ else:
 def home():
     return render_template('home.html')
 
-if __name__ == "__main__":
-    app.run(host='0.0.0.0', debug=True)
+@app.route("/hello-dreamer")
+def hello_dreamer():
+    return render_template('hello-dreamer.html')
+
+@app.route("/thanks")
+def thanks():
+    return render_template('thanks.html')
+
+#if __name__ == "__main__":
+#    app.run(host='0.0.0.0', debug=True)
