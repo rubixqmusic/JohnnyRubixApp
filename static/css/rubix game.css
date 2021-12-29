@@ -7,46 +7,36 @@
 }
 
 @font-face {
-    font-family: Intrepid;
-    src: url(intrepid.ttf);
+    font-family: BitWonder;
+    src: url(bitwonder.ttf);
   }
 
 @font-face {
-    font-family: IntrepidBold;
-    src: url(intrepid-bold.ttf);
+    font-family: Minecraft;
+    src: url(Minecraft.ttf);
   }
-
-@font-face {
-    font-family: IntrepidExtraBold;
-    src: url(intrepid-extra-bold.ttf);
-  }
-
-@font-face {
-    font-family: IntrepidItalic;
-    src: url(intrepid-italic.ttf);
-  }
-
 
 :root {
-    --main-heading-color: rgb(185, 253, 235);
-    --subheading-color: rgb(185, 253, 235);
-    --caption-color: rgb(255, 130, 238);
-    --normal-text-color: rgb(185, 253, 235);
-    --button-text-color: rgb(185, 253, 235);
-    --button-border-color: rgb(185, 253, 235);
-    --button-hover-color: rgba(156, 28, 139, 0.521);
-    --button-active-color: rgba(156, 28, 139, 0.521);
-    --menu-border-color: rgb(185, 253, 235);
+    --main-heading-color: rgb(241, 16, 16);
+    --subheading-color: rgb(253, 185, 185);
+    --caption-color: rgb(255, 255, 255);
+    --normal-text-color: rgb(255, 255, 255);
+    --button-text-color: rgb(255, 255, 255);
+    --button-border-color: rgb(255, 255, 255);
+    --button-hover-color: rgb(156, 2, 2);
+    --button-active-color: rgba(160, 4, 4, 0.521);
+    --menu-border-color: rgb(255, 255, 255);
+    --menu-background-color: rgb(192, 114, 11);
 
     --default-word-spacing: 5px !important;
 
-    --main-heading-font: IntrepidExtraBold;
-    --main-heading-font-size: 90px;
+    --main-heading-font: BitWonder;
+    --main-heading-font-size: 44px;
 
-    --subheading-font: IntrepidBold;
+    --subheading-font: 8BitWonder;
     --subheading-font-size: 48px;
 
-    --normal-text-font: Intrepid;
+    --normal-text-font: Minecraft;
     --normal-text-font-size: 24px;
 
     --caption-font: IntrepidItalic;
@@ -209,8 +199,8 @@ textarea {
 }
 
 body {
-    background-image: var(--background-image);
-    background-color: rgba(0, 0, 0, 0.575);
+    /*background-image: var(--background-image);*/
+    background-color: rgb(0, 0, 0);
     background-blend-mode: darken;
     background-attachment: fixed;
     background-position: center;
@@ -270,6 +260,7 @@ body {
     padding: var(--menu-padding);
     width: var(--menu-width);
     max-width: var(--max-menu-width);
+    background-color: var(--menu-background-color);
     /*display: flex;
     flex-direction: column;
     align-items: center;
@@ -319,6 +310,7 @@ body {
 .button {
     margin-bottom: var(--button-bottom-margin);
     border: var(--border-size) solid var(--button-border-color);
+    background-color: var(--menu-background-color);
     min-height: var(--button-height);
     width: var(--button-width);
     max-width: var(--max-button-width);

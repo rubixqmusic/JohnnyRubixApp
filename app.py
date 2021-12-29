@@ -18,7 +18,7 @@ def home():
 
 @app.route("/hello-dreamer")
 def hello_dreamer():
-    return render_template('hello-dreamer.html')
+    return render_template('hello-dreamer-tmp.html')
 
 @app.route("/thanks")
 def thanks():
