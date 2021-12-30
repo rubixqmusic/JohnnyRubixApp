@@ -331,7 +331,7 @@
     </div>
 
 
-    <div class="content-container" id="random-stuff-container">
+    <div class="content-container" id="random-stuff">
         <div class="button" id="random-stuff-button">
             <h3>other random projects and stuff i'm into</h3>
         </div>
@@ -547,6 +547,40 @@
             <br>
             <br>
             <div class="close-menu-button" id="close-random-stuff-button">
+                <h3>X</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-container" id="message-me">
+        <div class="button" id="message-me-button">
+            <h3>send me a message!</h3>
+        </div>
+
+        <div class="drop-down-menu-container" id="message-me-drop-down">
+            <br>
+            <form action="https://formsubmit.co/admin@johnnyrubix.com" method="POST" class="form" style="display: flex; flex-direction: row; flex-wrap: wrap;">
+                <br>
+                <br>
+                <h3></h3>
+                <br>
+                <input type="hidden" name="_subject" value="new game inquiry!">
+                <input type="hidden" name="_next" value="https://www.johnnyrubix.com/thanks">
+                <input class="input-field" type="text" name="name" placeholder="name (required*)" required style="flex-basis: 80%; margin-top: 15px; margin-bottom: 15px;">
+                <br>
+                <input class="input-field" type="email" name="email" placeholder="email (required*)" required style="flex-basis: 80%; margin-top: 15px; margin-bottom: 15px;">
+                <br>
+                <textarea class="text-box" id="text-box" name="text-box" rows="4" cols="50" maxlength="500" placeholder="message" style="flex-basis: 80%; margin-top: 15px; margin-bottom: 15px;"></textarea>
+                <br>
+                <input type="checkbox" class="checkbox" name="email-signup" id="email-signup" style="flex-basis: 10%; margin-left: 5%;"> 
+                <label class="label" style="white-space: pre-line; text-align: left; flex-basis: 75%; font-size: 20px;" for="email-signup">send me updates on projects and new releases</label>
+                <br>
+                <button class="form-submit-button" type="submit" style="flex-basis: 80%; margin-top: 35px; margin-bottom: 15px;">send</button>
+            </form>
+            <br>
+            <br>
+            <br>
+            <div class="close-menu-button" id="close-message-me-button">
                 <h3>X</h3>
             </div>
         </div>

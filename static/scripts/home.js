@@ -129,6 +129,21 @@ $(document).ready(function() {
     $('#random-stuff-drop-down').slideUp();
     });
 
+    //message me section
+
+    $("#message-me-button").click(function() {
+      var isHidden = $("#message-me-drop-down").is(":hidden");
+      if (isHidden) {
+          $('#message-me-drop-down').slideDown();
+      } else {
+          $('#message-me-drop-down').slideUp();
+        }
+    });
+
+    $("#close-message-me-button").click(function() {
+    $('#message-me-drop-down').slideUp();
+    });
+
   //merch store section
 
     $("#merch-store-button").click(function() {
