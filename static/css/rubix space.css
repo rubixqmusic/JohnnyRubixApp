@@ -37,6 +37,7 @@
     --button-hover-color: rgba(156, 28, 139, 0.521);
     --button-active-color: rgba(156, 28, 139, 0.521);
     --menu-border-color: rgb(185, 253, 235);
+    --menu-background-color: rgba(0, 0, 0, 0.253);
 
     --default-word-spacing: 5px !important;
 
@@ -280,6 +281,7 @@ body {
 .drop-down-menu-container {
     margin-bottom: var(--default-bottom-margin);
     border: var(--border-size) solid var(--menu-border-color) ;
+    background-color: var(--menu-background-color);
     padding: var(--menu-padding);
     width: var(--menu-width);
     max-width: var(--max-menu-width);
@@ -335,6 +337,7 @@ body {
 .button {
     margin-bottom: var(--button-bottom-margin);
     border: var(--border-size) solid var(--button-border-color);
+    background-color: var(--menu-background-color);
     min-height: var(--button-height);
     width: var(--button-width);
     max-width: var(--max-button-width);

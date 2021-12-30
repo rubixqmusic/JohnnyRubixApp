@@ -300,6 +300,13 @@ body {
 
 }
 
+.image-box {
+    width: 95%;
+    margin-bottom: var(--default-bottom-margin);
+    margin-left: 2%;
+    margin-right: auto;
+}
+
 .form {
     display: flex;
     flex-direction: column;
