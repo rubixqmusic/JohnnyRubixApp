@@ -6,7 +6,12 @@
 <meta property="og:title" content="Johnny Rubix"/>
 <meta property="og:description" content="multimedia artist. technology enthusiast. professional dumbass"/>
 <meta property="og:image" content="{{url_for('static', filename='images/johnnyrubix-og.png')}}">
-<meta property="og:type" content="website"/>        
+<meta property="og:type" content="website"/>
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:title" content="Johnny Rubix"/>
+<meta name="twitter:description" content="multimedia artist. technology enthusiast. professional dumbass"/>
+<meta name="twitter:image" content="{{url_for('static', filename='images/johnnyrubix-og.png')}}"/>
 {% endblock %}
 
 
@@ -46,7 +51,30 @@
 
 <div class="body-container">
 
-    
+
+    <div class="content-container" id="my-story-container">
+        <div class="button" id="my-story-button">
+            <h3>my story</h3>
+        </div>
+
+        <div class="drop-down-menu-container" id="my-story-drop-down">
+            
+            <div class="text-container" id="my-story">
+                <h3>hi, my name is johnny rubix. ever since i was young, i've been interested in stuff. i started with music as a kid, and over the years i've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. i even designed the website you're looking at right now.   </h3>
+                <br>
+                <h3>i think it's so cool that all of these things i've learned over the years allow me to take an idea that only exists in my head and turn it into something real that i can share with you.</h3>
+                <br>
+                <h3>this site serves as a neat little hub where you can check out my various projects. i hope you enjoy them, and check back in from time to time. i'm always working on something!</h3>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="close-menu-button" id="close-my-story-button">
+                <h3>X</h3>
+            </div>
+        </div>
+    </div>
+
     <div class="content-container" id="new-music-container">
             <div class="button" id="streaming-button">
                 <h3>stream my new song The Great Simulation</h3>
@@ -72,34 +100,6 @@
                 </div>
                 
             </div>
-    </div>
-
-    <br>
-    <div class="body-menu-line"></div>
-    <br>
-    <br>
-
-    <div class="content-container" id="my-story-container">
-        <div class="button" id="my-story-button">
-            <h3>my story</h3>
-        </div>
-
-        <div class="drop-down-menu-container" id="my-story-drop-down">
-            
-            <div class="text-container" id="my-story">
-                <h3>hi, my name is johnny rubix. ever since i was young, i've been interested in stuff. i started with music as a kid, and over the years i've learned how to do a lot more things like photography, videography, art, computer programming, and electronics. i even designed the website you're looking at right now.   </h3>
-                <br>
-                <h3>i think it's so cool that all of these things i've learned over the years allow me to take an idea that only exists in my head and turn it into something real that i can share with you.</h3>
-                <br>
-                <h3>this site serves as a neat little hub where you can check out my various projects. i hope you enjoy them, and check back in from time to time. i'm always working on something!</h3>
-            </div>
-            <br>
-            <br>
-            <br>
-            <div class="close-menu-button" id="close-my-story-button">
-                <h3>X</h3>
-            </div>
-        </div>
     </div>
 
     <div class="content-container" id="music-container">

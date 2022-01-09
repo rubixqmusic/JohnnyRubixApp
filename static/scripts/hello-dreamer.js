@@ -6,7 +6,7 @@ $(document).ready(function() {
     //header button home link
 
     $("#main-header").click(function() {
-      var url = "/";
+      var url = "/home";
       window.open(url, "_self");
     
     });
@@ -126,7 +126,7 @@ $(document).ready(function() {
   //back to main section
 
     $("#back-to-main-button").click(function() {
-        var url = "/#random-stuff";
+        var url = "/home#random-stuff";
         window.open(url, '_self');
       
     });
