@@ -37,7 +37,7 @@
     --button-hover-color: rgba(156, 28, 28, 0.521);
     --button-active-color: rgba(156, 28, 28, 0.521);
     --menu-border-color: rgb(255, 130, 130);
-    --menu-background-color: rgba(83, 20, 20, 0.521);
+    --menu-background-color: rgba(65, 15, 15, 0.692);
     --icon-hue-rotation: 250deg;
 
     --default-word-spacing: 5px !important;
@@ -134,6 +134,7 @@ h1 {
     background: transparent;
     color: var(--main-heading-color);
     font-weight: bold;
+    text-shadow: 4px 4px rgb(143, 0, 0);
     margin: 0;
     word-spacing: var(--default-letter-spacing);    
 }
@@ -238,12 +239,12 @@ textarea {
     top: 0;
     bottom: 0;
     z-index: -1;
-    opacity: 0.5;
+    opacity: 0.3;
   }
 
 body {
     /*background-image: var(--background-image);*/
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(24, 0, 0);
     background-blend-mode: darken;
     background-attachment: fixed;
     background-position: center;
