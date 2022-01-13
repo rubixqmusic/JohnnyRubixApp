@@ -33,5 +33,9 @@ def hello_dreamer():
 def thanks():
     return render_template('thanks.html')
 
+@app.route("/artest")
+def artest():
+    return render_template('artest.html')
+
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0', debug=True)
