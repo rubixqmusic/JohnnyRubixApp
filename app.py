@@ -23,7 +23,7 @@ def home():
 
 @app.route("/hello-dreamer")
 def hello_dreamer():
-    return render_template('hello-dreamer-tmp.html')
+    return render_template('hello-dreamer.html')
 
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0', debug=True)
