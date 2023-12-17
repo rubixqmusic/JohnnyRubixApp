@@ -16,10 +16,6 @@ else:
 #def landing_page():
 #    return render_template('simulation.html')
 
-@app.route("/simulation")
-def simulation():
-    return render_template('simulation.html')
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -28,14 +24,6 @@ def home():
 @app.route("/hello-dreamer")
 def hello_dreamer():
     return render_template('hello-dreamer-tmp.html')
-
-@app.route("/thanks")
-def thanks():
-    return render_template('thanks.html')
-
-@app.route("/artest")
-def artest():
-    return render_template('artest.html')
 
 #if __name__ == "__main__":
 #    app.run(host='0.0.0.0', debug=True)
