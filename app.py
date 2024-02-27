@@ -12,10 +12,6 @@ if os.environ.get('ENV') == 'production':
 else:
     app.secret_key = 'j0#nNyr|_|b!x|3!tC#80085'
 
-#@app.route("/")
-#def landing_page():
-#    return render_template('simulation.html')
-
 @app.route("/")
 @app.route("/home")
 def home():
@@ -24,6 +20,3 @@ def home():
 @app.route("/hello-dreamer")
 def hello_dreamer():
     return render_template('hello-dreamer.html')
-
-#if __name__ == "__main__":
-#    app.run(host='0.0.0.0', debug=True)
